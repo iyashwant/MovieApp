@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="2"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="#ef26c6da">
+
+    <!--content-->
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_movies"
+        android:background="@color/darkGrey"
+        >
+
+        <ScrollView
+            android:layout_below="@+id/appBarLayout"
+            android:id="@+id/movie_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </ViewFlipper>
+
+
+
+
+                <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grid_view"
+                    android:layout_below="@+id/viewFlipper1"
+                    android:layout_width="fill_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_height="1400sp"
+                    android:numColumns="3"
+                    android:columnWidth="90dp"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:stretchMode="columnWidth" >
+                </GridView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <com.github.clans.fab.FloatingActionMenu
+
+            android:id="@+id/material_design_android_floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="3dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/teall"
+            fab:menu_colorPressed="@color/colorPrimary"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_label="Back"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/ic_action_filter"
+            fab:menu_labels_colorNormal="#f2464646"
+            fab:menu_labels_colorPressed="#21434343"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="16sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#661d1e1d"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="4dp"
+            fab:menu_showShadow="true">
+
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/teal"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/teall"
+                android:src="@drawable/ic_action_eng"
+                fab:fab_label="English"
+                fab:fab_size="normal" />
+
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_tamil"
+                fab:fab_colorNormal="@color/teal"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/teall"
+                fab:fab_label="Tamil"
+                fab:fab_size="normal" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/teal"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/teall"
+                android:src="@drawable/ic_action_telugu"
+                fab:fab_label="Telugu"
+                fab:fab_size="normal" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/teal"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/teall"
+                android:src="@drawable/ic_action_hindi"
+                fab:fab_label="Hindi"
+                fab:fab_size="normal" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/material_design_floating_action_menu_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/teal"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/teall"
+                android:src="@drawable/ic_action_malu"
+                fab:fab_label="Malayalam"
+                fab:fab_size="normal" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_background"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iyashwant.movieapp.MovieDetails">
+
+
+    <ScrollView
+        android:layout_marginBottom="41sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_blur"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_stroke"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/movie_name"
+                android:textSize="25dp"
+                android:layout_marginTop="380sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/movie_lang"
+                android:textSize="16dp"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/movie_length"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/greY_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+                <View
+                    android:layout_marginTop="20sp"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/greY_text"
+                    />
+
+            <TextView
+                android:text="SYNOPSIS"
+
+                android:textColor="@color/white"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/movi_synop"
+                android:textColor="@color/greY_text"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+                <View
+                    android:layout_marginTop="20sp"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/greY_text"
+                    />
+
+            <TextView
+                android:text="CAST"
+                android:textColor="@color/white"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/movie_cast"
+                android:textColor="@color/greY_text"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+                <View
+                    android:layout_marginTop="20sp"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/greY_text"
+                    />
+
+            <TextView
+                android:textColor="@color/white"
+                android:text="Director"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/movie_director"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/greY_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"/>
+</LinearLayout>
+
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:text="Book"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:id="@+id/select_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
